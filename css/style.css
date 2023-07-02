@@ -42,6 +42,7 @@
 .main-content{
     margin-left: 260px;
     width: calc(100%-260px);
+    height: 100vh;
 }
 
 .nav{
@@ -91,7 +92,12 @@
 .card{
     width: 60%;
     background-color: aliceblue;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     border-radius: 10px;
     height: 80%;
+    box-shadow: 2px 2px 4px 0 rgba(225, 204, 110, 1);
+}
+
+.text-white{
+    color: white;
 }
