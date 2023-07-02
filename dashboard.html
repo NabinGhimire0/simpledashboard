@@ -1,147 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Admin Dashboard</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- sidebar  -->
-    <div class="sidebar">
-        <div class="logo-detail">
-            <h2 style="color: white; padding: 18px;">Logo Here</h2>
+    <div class="sidebar sidebar-max-width" id="sideBar">
+      <div
+        class="logo-detail"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <img src="./images/clzLogo.png" alt="" style="width: 100px" id="logo" />
+        <div id="sidebarHandel">
+
+            <i class="bx bx-x " style="font-size: 40px"  id="cross"></i>
+            <i class='bx bx-menu hide' style="font-size: 40px" id="menu"> </i>
         </div>
-        <div class="sidebar-content">
-            <ul>
-                <li class="dashboardlink active-link">
-                    <a>
-                        <i class='bx bxs-dashboard'></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="teacher-link">
-                    <a>
-                        <i class='bx bxl-microsoft-teams'></i>
-                        <span>Teachers</span>
-                    </a>
-                </li>
-                <li class="student-link">
-                    <a>
-                        <i class='bx bxs-group'></i>
-                        <span>Students</span>
-                    </a>
-                </li>
-                <li class="faculty-link">
-                    <a>
-                        <i class='bx bxs-category'></i>
-                        <span>Faculty</span>
-                    </a>
-                </li>
-                <li class="assignment-link">
-                    <a>
-                        <i class='bx bxs-book-reader'></i>
-                        <span>Assignment</span>
-                    </a>
-                </li>
-                <li class="feedback-link">
-                    <a>
-                        <i class='bx bx-revision'></i>
-                        <span>Feedback</span>
-                    </a>
-                </li>
-                <li class="semester-link">
-                    <a>
-                        <i class='bx bxs-home-alt-2'></i>
-                        <span>Semester</span>
-                    </a>
-                </li>
-                <li class="subject-link">
-                    <a>
-                        <i class='bx bxs-book-content'></i>
-                        <span>Subject</span>
-                    </a>
-                </li>
-                <li class="user-link">
-                    <a>
-                        <i class='bx bxs-user-circle'></i>
-                        <span>User</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+      </div>
+      <div class="sidebar-content">
+        <ul>
+          <li class="dashboardlink active-link">
+            <a>
+              <i class="bx bxs-dashboard"></i>
+              <span class="sidebarSpan">Dashboard</span>
+            </a>
+          </li>
+          <li class="teacher-link">
+            <a>
+              <i class="bx bxl-microsoft-teams"></i>
+              <span class="sidebarSpan">Teachers</span>
+            </a>
+          </li>
+          <li class="student-link">
+            <a>
+              <i class="bx bxs-group"></i>
+              <span class="sidebarSpan">Students</span>
+            </a>
+          </li>
+          <li class="faculty-link">
+            <a>
+              <i class="bx bxs-category"></i>
+              <span class="sidebarSpan">Faculty</span>
+            </a>
+          </li>
+          <li class="assignment-link">
+            <a>
+              <i class="bx bxs-book-reader"></i>
+              <span class="sidebarSpan">Assignment</span>
+            </a>
+          </li>
+          <li class="feedback-link">
+            <a>
+              <i class="bx bx-revision"></i>
+              <span class="sidebarSpan">Feedback</span>
+            </a>
+          </li>
+          <li class="semester-link">
+            <a>
+              <i class="bx bxs-home-alt-2"></i>
+              <span class="sidebarSpan">Semester</span>
+            </a>
+          </li>
+          <li class="subject-link">
+            <a>
+              <i class="bx bxs-book-content"></i>
+              <span class="sidebarSpan">Subject</span>
+            </a>
+          </li>
+          <li class="user-link">
+            <a>
+              <i class="bx bxs-user-circle"></i>
+              <span class="sidebarSpan">User</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- main content -->
-    <div class="main-content">
-        <!-- navbar -->
-        <div class="nav">
-            <div class="company">
-                <h2 style="color: white;" >Admin Dashboard</h2>
-            </div>
-            <div class="profile">
-                <div class="image">
-                    <a href="#"><img src="images/profile.png" alt=""></a>
-                </div>
-                <div class="profile-name">
-                    Rohan Karki
-                </div>
-            </div>
+    <div class="main-content main-content-max-width" id="nav">
+      <!-- navbar -->
+      <div class="nav">
+        <div class="company">
+          <h2 style="color: white">Admin Dashboard</h2>
         </div>
-        <!-- content here ✌️ -->
-        <div class="content">
-            <div class="dashboard">
-                <div class="dashboard-card">
-                    <div class="card-container">
-
-                        <div class="card "  style="margin-left: 10px;" >
-                            <img src="./images/profile.png" alt="Avatar" style="width:60%">
-                            <div class="container">
-                                <h4><b>Total Teachers</b></h4>
-                                <p>56</p>
-                            </div>
-                        </div>
-                        <div class="card "  >
-                            <img src="./images/profile.png" alt="Avatar" style="width:60%">
-                            <div class="container">
-                                <h4><b>Total Students</b></h4>
-                                <p>500</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="teacher hide">
-                <h2>this is Teacher field</h2>
-            </div>
-            <div class="student hide">
-                <h2>this is student field</h2>
-            </div>
-            <div class="faculty hide">
-                <h2>this is faculty field</h2>
-            </div>
-            <div class="assignment hide">
-                <h2>this is assignment field</h2>
-            </div>
-            <div class="feedback hide">
-                <h2>this is feedback field</h2>
-            </div>
-            <div class="semester hide">
-                <h2>this is semester field</h2>
-            </div>
-            <div class="subject hide">
-                <h2>this is subject field</h2>
-            </div>
-            <div class="user hide">
-                <h2>this is user field</h2>
-            </div>
+        <div class="profile">
+          <div class="image">
+            <a href="#"><img src="images/profile.png" alt="" /></a>
+          </div>
+          <div class="profile-name">Rohan Karki</div>
         </div>
+      </div>
+      <!-- content here ✌️ -->
+      <div class="content">
+        <div class="dashboard">
+          <div class="dashboard-card">
+            <div class="card-container">
+              <div class="card" style="margin-left: 10px">
+                <img
+                  src="./images/profile.png"
+                  alt="Avatar"
+                  style="width: 60%"
+                />
+                <div class="container">
+                  <h4><b>Total Teachers</b></h4>
+                  <p>56</p>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src="./images/profile.png"
+                  alt="Avatar"
+                  style="width: 60%"
+                />
+                <div class="container">
+                  <h4><b>Total Students</b></h4>
+                  <p>500</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="teacher hide">
+          <h2>this is Teacher field</h2>
+        </div>
+        <div class="student hide">
+          <h2>this is student field</h2>
+        </div>
+        <div class="faculty hide">
+          <h2>this is faculty field</h2>
+        </div>
+        <div class="assignment hide">
+          <h2>this is assignment field</h2>
+        </div>
+        <div class="feedback hide">
+          <h2>this is feedback field</h2>
+        </div>
+        <div class="semester hide">
+          <h2>this is semester field</h2>
+        </div>
+        <div class="subject hide">
+          <h2>this is subject field</h2>
+        </div>
+        <div class="user hide">
+          <h2>this is user field</h2>
+        </div>
+      </div>
     </div>
     <!-- js -->
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

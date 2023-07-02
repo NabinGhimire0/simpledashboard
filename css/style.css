@@ -6,11 +6,18 @@
 
 .sidebar{
     background-color: #2D4356;
-    width: 260px;
+   
     height: 100vh;
     padding: 20px;
     position: fixed;
     cursor: pointer;
+}
+.sidebar-max-width{
+    width: 260px;
+
+}
+.sidebar-min-width{
+    width: 60px;
 }
 
 .sidebar-content{
@@ -39,11 +46,21 @@
 }
 
 /* nav style */
-.main-content{
+/* .main-content{
     margin-left: 260px;
+} */
+.main-content-max-width{
     width: calc(100%-260px);
-}
+    margin-left: 260px;
 
+
+}
+.main-content-min-width{
+    width: calc(100%-60px);
+    margin-left: 60px;
+
+
+}
 .nav{
     background-color: #176B87;
     display: flex;

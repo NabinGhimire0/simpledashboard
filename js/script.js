@@ -1,3 +1,36 @@
+///nav bar hide un hide 
+const cross = document.getElementById("cross");
+const menu = document.getElementById("menu")
+const sideBar = document.getElementById("sideBar")
+const sidebarHandel = document.getElementById("sidebarHandel")
+const logo = document.getElementById("logo")
+const nav = document.getElementById("nav")
+const sidebarSpan =Array.from(document.getElementsByClassName("sidebarSpan")) 
+console.log(typeof(sidebarSpan))
+
+sidebarHandel.addEventListener('click',()=>{
+  cross.classList.toggle("hide")
+  menu.classList.toggle("hide")
+  sideBar.classList.toggle("sidebar-max-width")
+  sideBar.classList.toggle("sidebar-min-width")
+  logo.classList.toggle("hide")
+  nav.classList.toggle("main-content-max-width")
+  nav.classList.toggle("main-content-min-width")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 const dashboard = document.querySelector(".dashboard");
 const dashboardLink = document.querySelector(".dashboardlink");
 
