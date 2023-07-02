@@ -5,8 +5,11 @@ const sideBar = document.getElementById("sideBar")
 const sidebarHandel = document.getElementById("sidebarHandel")
 const logo = document.getElementById("logo")
 const nav = document.getElementById("nav")
-const sidebarSpan =Array.from(document.getElementsByClassName("sidebarSpan")) 
-console.log(typeof(sidebarSpan))
+// const sidebarSpan =Array.from(document.getElementsByClassName("sidebarSpan")) 
+const sidebarSpans = Array.from(document.querySelectorAll('.sidebarSpan'));
+
+console.log(typeof(sidebarSpans))
+
 
 sidebarHandel.addEventListener('click',()=>{
   cross.classList.toggle("hide")
@@ -16,21 +19,11 @@ sidebarHandel.addEventListener('click',()=>{
   logo.classList.toggle("hide")
   nav.classList.toggle("main-content-max-width")
   nav.classList.toggle("main-content-min-width")
+  sidebarSpans.map(item=>{
+    item.classList.toggle("hide")
+  })
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
 const dashboard = document.querySelector(".dashboard");
 const dashboardLink = document.querySelector(".dashboardlink");
 
