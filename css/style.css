@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.admin-dashboar{
+    display: flex;
+    /* justify-content: s; */
+}
+
 .sidebar{
     background-color: #2D4356;
     width: 260px;
@@ -100,4 +105,73 @@
 
 .text-white{
     color: white;
+}
+
+.content-field{
+    width: calc(100%-30px);
+    height: 75vh;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box{
+    width: 96%;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.content-body{
+    padding: 10px;
+}
+
+.content-body table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-body th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-body th {
+    background-color: #f2f2f2;
+}
+
+/* Add, Edit, Delete Btn */
+.add-btn{
+    background-color: #176B87;
+    width: 80px;
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+    border-color: #176B87;
+    cursor: pointer;
+}
+
+.edit-btn{
+    background-color: green;
+    width: 60px;
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+    border-color: green;
+    cursor: pointer;
+}
+
+.del-btn{
+    background-color: red;
+    width: 80px;
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+    border-color: red;
+    cursor: pointer;
 }
