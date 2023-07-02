@@ -12,71 +12,73 @@
 
 <body>
     <!-- sidebar -->
-    <div class="sidebar">
-        <div class="logo-detail">
-            <h2 style="color: white; padding: 18px;">Logo Here</h2>
+    <div class="sidebar max-width" id="sidebar"> 
+        <div class="logo-detail" style="display: flex; justify-content: space-between; align-items: center;">
+            <img src="" style="color: white; padding: 18px;" id="logo" />
+
+            <img  alt="" src="./images/x.png" style="height: 20px;  width: 20px; margin-left: 1%;"   id="sMenu">
         </div>
         <div class="sidebar-content">
             <ul>
                 <li class="dashboardlink active-link">
                     <a>
                         <i class='bx bxs-dashboard'></i>
-                        <span>Dashboard</span>
+                        <span id="hide1">Dashboard</span>
                     </a>
                 </li>
                 <li class="teacher-link">
                     <a>
                         <i class='bx bxl-microsoft-teams'></i>
-                        <span>Teachers</span>
+                        <span id="hide2">Teachers</span>
                     </a>
                 </li>
                 <li class="student-link">
                     <a>
                         <i class='bx bxs-group'></i>
-                        <span>Students</span>
+                        <span id="hide3"> Students</span>
                     </a>
                 </li>
                 <li class="faculty-link">
                     <a>
                         <i class='bx bxs-category'></i>
-                        <span>Faculty</span>
+                        <span id="hide4">Faculty</span>
                     </a>
                 </li>
                 <li class="assignment-link">
                     <a>
                         <i class='bx bxs-book-reader'></i>
-                        <span>Assignment</span>
+                        <span id="hide5">Assignment</span>
                     </a>
                 </li>
                 <li class="feedback-link">
                     <a>
                         <i class='bx bx-revision'></i>
-                        <span>Feedback</span>
+                        <span id="hide6">Feedback</span>
                     </a>
                 </li>
                 <li class="semester-link">
                     <a>
                         <i class='bx bxs-home-alt-2'></i>
-                        <span>Semester</span>
+                        <span id="hide7">Semester</span>
                     </a>
                 </li>
                 <li class="subject-link">
                     <a>
                         <i class='bx bxs-book-content'></i>
-                        <span>Subject</span>
+                        <span id="hide8">Subject</span>
                     </a>
                 </li>
                 <li class="user-link">
                     <a>
                         <i class='bx bxs-user-circle'></i>
-                        <span>User</span>
+                        <span id="hide9">User</span>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
     <!-- main content -->
-    <div class="main-content">
+    <div class="main-content-initial" id="navside">
         <!-- navbar -->
         <div class="nav">
             <div class="company">

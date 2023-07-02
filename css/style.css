@@ -6,13 +6,18 @@
 
 .sidebar{
     background-color: #2D4356;
-    width: 260px;
     height: 100vh;
     padding: 20px;
     position: fixed;
     cursor: pointer;
 }
+.max-width{
+    width:16.96%;
 
+}
+.min-width{
+    width: 5%;
+}
 .sidebar-content{
     margin-top: 30px;
 }
@@ -39,9 +44,14 @@
 }
 
 /* nav style */
-.main-content{
+.main-content-initial{
+    width: 83%;
     margin-left: 260px;
-    width: calc(100%-260px);
+}
+
+.navWidth{
+    width: calc(11.96+83%);
+    margin-left: 60px;
 }
 
 .nav{
@@ -50,6 +60,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 18px;
 }
 
