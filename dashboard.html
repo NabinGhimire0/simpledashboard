@@ -83,48 +83,235 @@
         <div class="nav">
             <div class="company">
                 <h2 style="color: white;" >Admin Dashboard</h2>
+=======
+    <div class="admin-dashboard">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div style="display: flex; justify-content: space-between; align-items: center;" class="logo-detail">
+                <h2>Logo Here</h2>
+                <!-- <img src="images/logo.png" class="logo" alt=""> -->
+                <!-- <i class='bx bx-x text-white'></i> -->
             </div>
-            <div class="profile">
-                <div class="image">
-                    <a href="#"><img src="images/profile.png" alt=""></a>
-                </div>
-                <div class="profile-name">
-                    Rohan Karki
-                </div>
+            <div class="sidebar-content">
+                <ul>
+                    <li class="dashboardlink active-link">
+                        <a>
+                            <i class='bx bxs-dashboard'></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="teacher-link">
+                        <a>
+                            <i class='bx bxl-microsoft-teams'></i>
+                            <span>Teachers</span>
+                        </a>
+                    </li>
+                    <li class="student-link">
+                        <a>
+                            <i class='bx bxs-group'></i>
+                            <span>Students</span>
+                        </a>
+                    </li>
+                    <li class="faculty-link">
+                        <a>
+                            <i class='bx bxs-category'></i>
+                            <span>Faculty</span>
+                        </a>
+                    </li>
+                    <li class="assignment-link">
+                        <a>
+                            <i class='bx bxs-book-reader'></i>
+                            <span>Assignment</span>
+                        </a>
+                    </li>
+                    <li class="feedback-link">
+                        <a>
+                            <i class='bx bx-revision'></i>
+                            <span>Feedback</span>
+                        </a>
+                    </li>
+                    <li class="semester-link">
+                        <a>
+                            <i class='bx bxs-home-alt-2'></i>
+                            <span>Semester</span>
+                        </a>
+                    </li>
+                    <li class="subject-link">
+                        <a>
+                            <i class='bx bxs-book-content'></i>
+                            <span>Subject</span>
+                        </a>
+                    </li>
+                    <li class="user-link">
+                        <a>
+                            <i class='bx bxs-user-circle'></i>
+                            <span>User</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- content here ✌️ -->
-        <div class="content">
-            <div class="dashboard">
-                <div class="dashboard-card">
-                    <div class="card">
-
+        <!-- main content -->
+        <div class="main-content">
+            <!-- navbar -->
+            <div class="nav">
+                <div class="company">
+                    <h2 style="color: white;">Admin Dashboard</h2>
+                </div>
+                <div class="profile">
+                    <div class="image">
+                        <a href="#"><img src="images/profile.png" alt=""></a>
+                    </div>
+                    <div class="profile-name">
+                        Rohan Karki
                     </div>
                 </div>
             </div>
-            <div class="teacher hide">
-                <h2>this is Teacher field</h2>
-            </div>
-            <div class="student hide">
-                <h2>this is student field</h2>
-            </div>
-            <div class="faculty hide">
-                <h2>this is faculty field</h2>
-            </div>
-            <div class="assignment hide">
-                <h2>this is assignment field</h2>
-            </div>
-            <div class="feedback hide">
-                <h2>this is feedback field</h2>
-            </div>
-            <div class="semester hide">
-                <h2>this is semester field</h2>
-            </div>
-            <div class="subject hide">
-                <h2>this is subject field</h2>
-            </div>
-            <div class="user hide">
-                <h2>this is user field</h2>
+            <!-- content here ✌️ -->
+            <div class="content">
+                <div class="dashboard">
+
+                </div>
+                <div class="teacher hide">
+                    <div class="content-field">
+                        <div class="content-box">
+                            <div class="content-header">
+                                <div class="title">
+                                    <h2>Teachers</h2>
+                                </div>
+                                <button class="add-btn"><i class='bx bx-plus-medical'></i> Add</button>
+                            </div>
+                            <div class="content-body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Department</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Alish</td>
+                                            <td>alish@example.com</td>
+                                            <td>984600000</td>
+                                            <td>Mathematics</td>
+                                            <td>
+                                                <button class="edit-btn">Edit</button>
+                                                <button class="del-btn">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Rohand</td>
+                                            <td>rohan@example.com</td>
+                                            <td>981423564</td>
+                                            <td>Science</td>
+                                            <td>
+                                                <button class="edit-btn">Edit</button>
+                                                <button class="del-btn">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Nabin</td>
+                                            <td>nabin@example.com</td>
+                                            <td>981256483</td>
+                                            <td>English</td>
+                                            <td>
+                                                <button class="edit-btn">Edit</button>
+                                                <button class="del-btn">Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="student hide">
+                    <div class="content-field">
+                        <div class="content-box">
+                            <div class="content-header">
+                                <div class="title">
+                                    <h2>Students</h2>
+                                </div>
+                                <button class="add-btn"><i class='bx bx-plus-medical'></i> Add</button>
+                            </div>
+                            <div class="content-body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th>Department</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Alish</td>
+                                            <td>alish@example.com</td>
+                                            <td>984600000</td>
+                                            <td>Mathematics</td>
+                                            <td>
+                                                <button class="edit-btn">Edit</button>
+                                                <button class="del-btn">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Rohand</td>
+                                            <td>rohan@example.com</td>
+                                            <td>981423564</td>
+                                            <td>Science</td>
+                                            <td>
+                                                <button class="edit-btn">Edit</button>
+                                                <button class="del-btn">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Nabin</td>
+                                            <td>nabin@example.com</td>
+                                            <td>981256483</td>
+                                            <td>English</td>
+                                            <td>
+                                                <button class="edit-btn">Edit</button>
+                                                <button class="del-btn">Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faculty hide">
+                    <h2>this is faculty field</h2>
+                </div>
+                <div class="assignment hide">
+                    <h2>this is assignment field</h2>
+                </div>
+                <div class="feedback hide">
+                    <h2>this is feedback field</h2>
+                </div>
+                <div class="semester hide">
+                    <h2>this is semester field</h2>
+                </div>
+                <div class="subject hide">
+                    <h2>this is subject field</h2>
+                </div>
+                <div class="user hide">
+                    <h2>this is user field</h2>
+                </div>
             </div>
         </div>
     </div>
