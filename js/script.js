@@ -22,8 +22,43 @@ const semesterLink = document.querySelector(".semester-link");
 const subject = document.querySelector(".subject");
 const subjectLink = document.querySelector(".subject-link");
 
+// const shrink = document.querySelector(".shrink");
+// const span = document.querySelectorAll("span");
+
 const user = document.querySelector(".user");
 const userLink = document.querySelector(".user-link");
+const sMenu = document.querySelector("#sMenu");
+// const cross = require("../images/x")
+// const menu = require("../images/hamburger")
+// sMenu.style.height="100px"
+// sMenu.style.width="100px"
+// sMenu.addEventListener("click",function (){
+//   // Smenu.src="./images/hamburger.png"
+//   console.log("CLICKED")
+// })
+const navside = document.getElementById("navside");
+var sidebar = true;
+const hide1 = document.getElementById("hide1")
+const hide2 = document.getElementById("hide2")
+const hide3 = document.getElementById("hide3")
+const hide4 = document.getElementById("hide4")
+const hide5 = document.getElementById("hide5")
+const hide6 = document.getElementById("hide6")
+const hide7 = document.getElementById("hide7")
+
+const logo = document.getElementById("logo");
+console.log(span)
+sMenu.addEventListener("click", () => {
+  navside.classList.toggle("main-content-initial");
+  navside.classList.toggle("navWidth");
+  logo.classList.toggle("hide");
+  console.log("clicked");
+  if (sidebar) sMenu.src = "./images/hamburger.png";
+  else sMenu.src = "./images/x.png";
+  sidebar = !sidebar;
+  document.querySelector("#sidebar").classList.toggle("max-width");
+  document.querySelector("#sidebar").classList.toggle("min-width");
+});
 
 dashboardLink.addEventListener("click", function () {
   dashboard.classList.remove("hide");
